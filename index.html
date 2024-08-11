@@ -1,14 +1,65 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <script src="script.js" defer></script>
+    <title>Tabbed Navigation</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <button id="myButton">Click Me!</button>
+    <div class="tabs">
+        <nav class="tab-headers">
+            <button class="tab-link" onclick="openTab(event, 'tab1')">About Me</button>
+            <button class="tab-link" onclick="openTab(event, 'tab2')">Blogs</button>
+            <button class="tab-link" onclick="openTab(event, 'tab3')">Physics Resources</button>
+        </nav>
+        <div class="tab-content" id="tab1">
+            <div class="grid-container">
+                <div class="profile-column">
+                    <img src="images/Fatima-Rodriguez-OG.jpg" alt="Profile" class="bubble-image">
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/fatimargz" target="_blank" class="social-link">LinkedIn</a>
+                        <a href="https://twitter.com/astro_fati" target="_blank" class="social-link">Twitter</a>
+                        <a href="images/Fatima_Rodriguez_CV.pdf" target="_blank" class="social-link">View CV</a>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <h2>About Me</h2>
+                    <p> Hello! My name is Fatima Rodriguez. I am a graduate student at Northern Illinois University studying particle physics. My interests include finding physics beyond the standard model, skateboarding, cooking, playing videogames, reading, talking to friends, and creating this website. As a first-gen student in physics, I created this website with the intention to provide resources for other students navigating the physics world (and also for fun blogs). Please feel free to browse around! </p>
+                    <h3> Career Journey </h3>
+                    <p> My journey in physics began during my undergraduate studies at UC Berkeley. blah blah  </p>
+
+                </div>
+                <div class="instagram-column">
+                    <!-- Instagram embed code or widget here -->
+                    <iframe src="https://www.instagram.com/fatielly34/embed" width="320" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </div>
+            </div>
+        </div>
+    <div>
+
+        <div id="tab2" class="tab-content" style="display:none;">
+            <div class="blog-text-container">
+                <h2>From Heartbreak to Death</h2>
+                <p> If I had to choose a word to describe this past year and a half, it's grief. First, my then boyfriend experienced a loss. Then one of my best friends experienced loss. Then another best friend did too. I learned that a past classmate passed away. Another best friend experienced loss. Later another did too. </p>
+                <p> I’ve never been confronted by death before this past year, and frankly I wasn’t sure how to best support my friends through it. How much time do I give them to grieve on their own? Is that the right approach? Do I bring it up or do I wait for them to? How do I bring it up? Are they eating? </p>
+                <p> When I learned my past classmate passed away, I sobbed, and that shocked me. We weren’t particularly close. I haven't spoken to them in years. And yet remembering how kind they always were during the few moments we had together, made me cry. It put into perspective the amount of grief that my friends were experiencing due to their personal losses. Something I still can’t even imagine. </p>
+                <p> Switching gears, I am currently going through heartbreak. I’m embarrassed to say, but it's been 6+ months since my ex and I broke up, and I am still learning how to move forward. To be fair, it’s been a roller coaster of emotions where some days I’m completely fine and other times I find myself paralyzed and sobbing. The time it's been since the break and the amount of time I’ve continued to cry makes me feel all kinds of crazy, cliche, cringy - all around embarrassed and frustrated. So being the scientist that I am, I wanted to learn the science behind heartbreak. Is there even science behind it? Why does it hurt so much? And when will it stop? </P>
+                <p> I came across a Science Vs. episode by Spotify Studios [2]. The episode talked about the research done at Albert Einstein College of Medicine by Dr. Lucy Brow, where they essentially took a bunch of broken hearted students and made them stare at a picture of their exes inside an MRI. What their brain scans revealed is that the part of the brain that signals physical pain was active, yet seeing the picture of their exes also activated another part of the brain, which they call the reward system - the part that triggers after eating chocolate, doing drugs, when in love, etc. So what this means is that during heartbreak, our brains are literally hurting, and that triggers down to our bodies. Coincidentally, I had a doctor's appointment this morning because my menstrual cycle was out of whack and it never does that (sorry kinda personal for the first blog, but also, half the world have cycles - grow up). My doctor explained that the main reason a woman’s menstrual cycle can go out of whack is emotional stress/turmoil .“Are you traveling a lot recently? Going through a breakup or changing your eating habits? “, she asks. “Ha ha…no”. </p>
+                <p> After listening to the podcast and reflecting on the unusual behaviors of my body, I felt scared because the brain is such a powerful, unknown organ, but also relieved that my body was just responding properly to my grief. </p>
+                <p> Grief. After supporting my friends through their grief of losing someone close, it feels extremely wrong and dramatic calling my emotions after this break up, “grief”. I talked to my best friend about this, one who experienced a close death, and she mentioned a similar research she came across done to study grief [1] (she is also a girly in STEM , btw). It was the same process: they placed folks who recently experienced loss into an MRI and studied their brain behavior. Similar brain behavior occurred as described in the heartbreak podcast. That’s when we came into the realization that grief is a spectrum. At first, “grief” is a single-used word to describe emotions caused after someone’s death. But now, I think grief is a spectrum of emotions caused by loss. All kinds of loss. My ex was my best friend. My person. I knew everything about him and his whereabouts. He knew mine. But now that type of relationship is gone. I don’t know where he’s at, and I’m not sure if I truly know him at all anymore. The person he was to me and that had brought me joy is gone, and that’s what my body is grieving. A very different grief, to be clear, from what he and my friends are or were feeling.</p>
+                <p> That being said, it hasn’t been the best of times being a bunch of twenty year olds navigating loss. Why is it such a sad time? Is this a general mid-twenties experience? Just something I continue thinking about. </p>
+                <p> [1] O'Connor, M. F. (2022). The grieving brain: The surprising science of how we learn from love and loss. HarperOne. </p>
+                <p> [2] Zuckerman, W. et al. (2019, October). Heartbreak: Why does it hurt so bad?. Science Vs.. Spotify Studios. <a href=https://open.spotify.com/episode/1pUZDEEfvrOonvNhSy5mf0>https://open.spotify.com/episode/1pUZDEEfvrOonvNhSy5mf0 </a> </p>
+            </div>
+        </div>
+        <div id="tab3" class="tab-content" style="display:none;">
+            <h2>Physics Resources</h2>
+            <p>Enter Here</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
